@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  backend:
+    image: docker-teaches-code
+    ports: ["8080:8080"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/dtc:/tmp/dtc
+  cpp:
+    image: dtc-cpp
+  dockerfile:
+    image: dtc-dockerfile
+  golang:
+    image: dtc-golang
+  python:
+    image: dtc-python

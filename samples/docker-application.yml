@@ -1,0 +1,3 @@
+version: '1.0'
+author: 'The Docker Teaches Code Team'
+index: 'http://localhost:8080'
